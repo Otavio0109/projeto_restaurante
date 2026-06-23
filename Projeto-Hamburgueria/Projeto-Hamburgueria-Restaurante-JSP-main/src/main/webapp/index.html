@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <style>
+        .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px; }
+        .card { background: #f4f6f8; border-radius: 12px; padding: 24px 30px; text-align: center; width: 150px; text-decoration: none; color: #2c3e50; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: 0.2s; }
+        .card:hover { background: #f39c12; color: white; transform: translateY(-4px); }
+        .card .icon { font-size: 32px; margin-bottom: 10px; }
+        .card span { font-weight: bold; font-size: 14px; }
+        .hero { text-align: center; padding: 20px 0 10px; color: #666; font-size: 15px; }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- index.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="index.html"><i class="fa-solid fa-burger"></i> Hamburgueria</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item px-2">
+            <a class="nav-link" href="com/mycompany/restaurantehamburgueria/controller/CargoController?opcao=listar">
+                <i class="fa-solid fa-id-badge"></i> Cargo
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a class="nav-link" href="com/mycompany/restaurantehamburgueria/controller/CategoriaController?opcao=listar">
+                <i class="fa-solid fa-tags"></i> Categoria
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a class="nav-link" href="com/mycompany/restaurantehamburgueria/controller/ClienteController?opcao=listar">
+                <i class="fa-solid fa-user"></i> Cliente
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a class="nav-link" href="com/mycompany/restaurantehamburgueria/controller/FornecedorController?opcao=listar">
+                <i class="fa-solid fa-truck"></i> Fornecedor
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a class="nav-link" href="com/mycompany/restaurantehamburgueria/controller/MesaController?opcao=listar">
+                <i class="fa-solid fa-chair"></i> Mesa
+            </a>
+        </li>
+        <li class="nav-item px-2">
+            <a class="nav-link" href="com/mycompany/restaurantehamburgueria/controller/TurnosController?opcao=listar">
+                <i class="fa-solid fa-clock"></i> Turnos
+            </a>
+        </li>
+    </ul>
+</div>
+</nav>
+<div class="containerr">
+    <h1>Sistema de Gerenciamento</h1>
+    <p class="hero">Selecione um módulo para gerenciar os cadastros</p>
+    <div class="cards">
+        <a class="card" href="com/mycompany/restaurantehamburgueria/controller/CargoController?opcao=listar">
+            <div class="icon">👔</div><span>Cargo</span>
+        </a>
+        <a class="card" href="com/mycompany/restaurantehamburgueria/controller/CategoriaController?opcao=listar">
+            <div class="icon">🏷️</div><span>Categoria</span>
+        </a>
+        <a class="card" href="com/mycompany/restaurantehamburgueria/controller/ClienteController?opcao=listar">
+            <div class="icon">👤</div><span>Cliente</span>
+        </a>
+        <a class="card" href="com/mycompany/restaurantehamburgueria/controller/FornecedorController?opcao=listar">
+            <div class="icon">🚚</div><span>Fornecedor</span>
+        </a>
+        <a class="card" href="com/mycompany/restaurantehamburgueria/controller/MesaController?opcao=listar">
+            <div class="icon">🪑</div><span>Mesa</span>
+        </a>
+        <a class="card" href="com/mycompany/restaurantehamburgueria/controller/TurnosController?opcao=listar">
+            <div class="icon">🕐</div><span>Turnos</span>
+        </a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
